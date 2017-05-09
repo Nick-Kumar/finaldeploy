@@ -23,6 +23,14 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.home, name='home'),
     url(r'^profile/$', views.userProfile, name='profile'),
+    url(r'^profile/content.html', views.userProfileContent, name='profileContent'),
+    url(r'^profile/news.html', views.userProfileNews, name='profileNews'),
+    url(r'^profile/mentor.html', views.userProfileMentor, name='profileMentor'),
+    url(r'^profile/resources.html', views.userProfileResources, name='profileResources'),
+    url(r'^profile/FAQ.html', views.userProfileFAQ, name='profileFAQ'),
+    url(r'^profile/profile.html', views.userProfileProfile, name='profileProfile'),
+    url(r'^profile/menteelogin.html', views.userProfile, name='profile'),
+
     url(r'^accounts/', include('allauth.urls')),
     url(r'^news/', include('news.urls')),
 ]
