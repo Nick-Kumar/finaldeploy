@@ -30,6 +30,7 @@
                                   <li><a href="{% url 'account_login' %}">Login</a></li>
                                   <li><a href="{% url 'account_signup' %}">Register</a></li>
                                 {% else %}
+                                  <li><a href="{% url 'account_login' %}">Profile</a></li>
                                   <li><a href="{% url 'account_logout' %}">Logout</a></li>
                                 {% endif %}
                                 </ul>
